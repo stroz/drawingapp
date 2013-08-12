@@ -1,0 +1,161 @@
+/***Sketch Tool Styles***/
+#sketch {
+    /*margin: 20px auto;;
+    border: 2px solid gray;
+    height: 100%;*/
+    width: 830px;
+    height: 600px;
+    position: relative;
+    display: inline-block;
+}
+#paint {
+    cursor: crosshair;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+#tmp_canvas {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    cursor: crosshair;
+}
+#canvasBG {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    max-width: 830px;
+    max-height: 600px;
+    min-width: 830px;
+}
+#transparencyBG {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 830px;
+    height: 600px;
+    background-color: rgba(255,255,255,0.5);
+}
+#text_tool {
+    position: absolute;
+    border: 1px dashed black;
+    outline: 0;
+    display: none;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 2px;
+    /*white-space: nowrap;*/
+}
+/* Begin My Styles */
+/*h2 {
+    text-align: center;
+}
+
+h3 {
+    margin:0px;
+}*/
+#workStation {
+    width: 980px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    margin: 10px auto;
+    font-size: 0; /*To remove spacing between inline-block elements*/
+}
+.toolbox {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    font-size: 16px;
+    text-align: left;
+}
+.toolbox h2 {
+    text-align: center;
+    margin: 10px;
+}
+.toolsection {
+    display: block;
+    vertical-align: top;
+    width: 146px;
+    height: 146px;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+.toolsection div { /*margin: 10px;_NO__DOTCOMMA__AFTER__*/ }
+.toolsection div:hover {
+    color: #666;
+    cursor: pointer;
+}
+#sizeAndColor { /*background-image: url('/static/symbols/sizeAndColor.png');_NO__DOTCOMMA__AFTER__*/ }
+#toolSelection { background-image: url('images/symbols/sketchTools/marker.png') }
+#undo { background-image: url('images/symbols/sketchTools/undo.png') }
+#saveImage { background-image: url('images/symbols/sketchTools/save.png') }
+.toolExpand {
+    position: absolute;
+    display: none;
+    margin-left: 150px;
+    z-index: 99999;
+    width: 584px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    font-size: 0;
+    cursor: pointer;
+}
+.toolExpandSingle {
+    display: inline-block;
+    width: 146px;
+    height: 146px;
+}
+#sizeAndColorOptions {
+    margin-top: -600px;
+    width: auto;
+}
+#toolSelectionOptions { margin-top: -450px }
+/* Colors and Sizes */
+#marker { background-image: url('images/symbols/sketchTools/marker.png') }
+#shape { background-image: url('images/symbols/sketchTools/shape.png') }
+#line { background-image: url('images/symbols/sketchTools/line.png') }
+#arc { background-image: url('images/symbols/sketchTools/arc.png') }
+#text { background-image: url('images/symbols/sketchTools/text.png') }
+#rectangle { background-image: url('images/symbols/sketchTools/rectangle.png') }
+#ellipse { background-image: url('images/symbols/sketchTools/ellipse.png') }
+#eraser { background-image: url('images/symbols/sketchTools/eraser.png') }
+#clearCanvas { background-image: url('images/symbols/sketchTools/clear.png') }
+input[type='range'] {
+    -webkit-appearance: none !important;
+    height: 20px;
+    width: 100%;
+}
+#sliderSize {
+    width: 400px;
+    height: 50px;
+    margin: 20px 50px 0px 40px;
+}
+#sliderOpacity {
+    width: 400px;
+    height: 50px;
+    margin: 20px 50px 0px 40px;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+#colorCanvasWrapper {
+    margin: 0px auto;
+    display: inline-block;
+    cursor: crosshair;
+}
+#sliderBox {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
